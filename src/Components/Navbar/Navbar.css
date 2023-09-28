@@ -1,0 +1,42 @@
+.resetBtn {
+  padding: 6px 10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #e75025;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px whitesmoke;
+}
+
+.resetBtn {
+  background-color: #e75025;
+}
+
+.resetBtn:active {
+  background-color: #b83714;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1; /* This makes the content between logo and button centered */
+}
+
+/* Center the text and make it white */
+.text-white {
+  color: white;
+  text-align: center;
+  margin: 0; /* Remove default margin */
+}

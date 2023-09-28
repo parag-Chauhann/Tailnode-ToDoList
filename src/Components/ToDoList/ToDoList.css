@@ -1,0 +1,113 @@
+.toDoTask {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toDoTask h1 {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(231, 80, 37, 1) 35%, rgba(231, 80, 37, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  
+  .addToDo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .addToDo input {
+    width: 30rem;
+    padding: 15px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    transition: border-radius 1s ease-in-out;
+    cursor: pointer;
+    border-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(231, 80, 37, 1) 35%, rgba(231, 80, 37, 1) 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+  }
+  
+  .add {
+    height: 50px;
+    width: auto;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .add:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .toDoList {
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    margin-top: 8px;
+    border-radius: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,80,37,0.6699929971988796) 28%, rgba(231,80,37,1) 100%);
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px;
+  }
+  
+  .toDoList:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
+    border: 2px solid #00fde8;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  .completed .checkmark {
+    background-color: #4caf50;
+    border-color: #4caf50;
+  }
+  
+  .label {
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition: text-decoration 0.3s ease-in-out, color 0.3s ease-in-out;
+    max-width: 30rem;
+    word-wrap: break-word; /* Add this property to wrap long words */
+  }
+  
+  .completed .label {
+    text-decoration: line-through;
+    color: #d4d0d0;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .editBtn,
+  .dltBtn {
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .dltBtn:hover {
+    color: red;
+  }
+  

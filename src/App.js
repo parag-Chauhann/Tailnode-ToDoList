@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import ToDoList from './Components/ToDoList/ToDoList';
 
 function App() {
+  const [tasks, setTasks] = useState([]);
+
+  // Function to reset tasks
+  const resetTasks = () => {
+    setTasks([]);
+    // You can also remove tasks from local storage here if needed
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar onResetTasks={resetTasks} />
+      <ToDoList tasks={tasks} setTasks={setTasks} />
     </div>
   );
 }
